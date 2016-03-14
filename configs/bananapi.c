@@ -26,13 +26,13 @@ struct {
 	.header = {
 		.signature = JAILHOUSE_SYSTEM_SIGNATURE,
 		.hypervisor_memory = {
-			.phys_start = 0x7c000000,
-			.size = 0x4000000,
+			.phys_start = 0x3b000000,
+			.size = 0x6000000,
 		},
 		.debug_console = {
-			.phys_start = 0x01c28000,
-			.size = 0x1000,
-			.flags = JAILHOUSE_MEM_IO,
+			.phys_start = 0x3f8,
+//			.size = 0x1000,
+//			.flags = JAILHOUSE_MEM_IO,
 		},
 		.root_cell = {
 			.name = "Banana-Pi",
